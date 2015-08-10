@@ -19,6 +19,7 @@ COOKIES_ENABLES=False
 DNSCACHE_ENABLED = True
 CONCURRENT_REQUESTS = 50
 DOWNLOAD_TIMEOUT = 300
+LOG_FILE = "/home/dyh/data/testScrapyd/log"
 
 # Retry many times since proxies often fail
 RETRY_TIMES = 10

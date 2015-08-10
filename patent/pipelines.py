@@ -12,13 +12,13 @@ import os
 class PatentPipeline(object):
     def process_item(self, item, spider):
         if len(item.values()) == 2:
-            os.chdir("/root/dyh/data/testScrapyd")
+            os.chdir("/home/dyh/data/testScrapyd")
             f = open("undownpage", "a")
             writeIn = item['wrongpage'] + "\001" + item['wrongstrWord']
             f.write(writeIn+"\n")
             f.close()
         else:
-            os.chdir("/root/dyh/data/testScrapyd")
+            os.chdir("/home/dyh/data/testScrapyd")
             result = tuple(item.values())
             f = open(item['fName'], "a")
             writeIn = "\001".join(result)

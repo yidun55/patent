@@ -67,8 +67,8 @@ class patent(BaseSpider):
         # print response.body
         # print "i'm end ok"
         sInput = []
-        for i in xrange(2006, 2007):
-            for j in xrange(1, 2):
+        for i in xrange(2015, 2016):
+            for j in xrange(06, 10):
                 if j<=9:
                     sInput.append(str(i)+"0"+str(j))
                 else:
